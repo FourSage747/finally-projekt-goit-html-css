@@ -1,0 +1,310 @@
+.Products {
+  padding: 60px 0;
+  background-image: url(../images/mobile/background.jpg);
+  background-position-x: 65%;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .Products {
+    background-image: url(../images/mobile/background@2x.jpg);
+    background-position-x: 65%;
+    background-size: cover;
+  }
+}
+
+.ul {
+  li {
+    text-align: center;
+    font-family: Montserrat;
+    @include font(800, 18px);
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: Seymour One;
+    @include font(400, 30px);
+    letter-spacing: 1.2px;
+    margin-top: 12px;
+    margin-bottom: 148px;
+  }
+}
+.ul2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 168px;
+
+  .card {
+    position: relative;
+    padding: 123px 0 16px 0;
+    width: 280px;
+    text-align: center;
+    border-radius: 24px;
+
+    &:first-child {
+      background-color: var(--green-color2);
+    }
+    &:nth-child(2) {
+      background-color: var(--yellow-color2);
+    }
+    &:last-child {
+      background-color: var(--brown-color);
+    }
+
+    img {
+      position: absolute;
+      left: 40px;
+      top: -111px;
+      z-index: 1;
+    }
+
+    h3 {
+      font-family: Montserrat;
+      @include font(700, 20px);
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    p {
+      width: 200px;
+      margin: auto;
+      font-family: Montserrat;
+      @include font(400, 14px);
+      font-style: normal;
+      line-height: 176%;
+      letter-spacing: 0.56px;
+    }
+    &:first-child p {
+      margin-bottom: 101px;
+    }
+    &:nth-child(2) p {
+      margin-bottom: 53px;
+    }
+    &:last-child p {
+      margin-bottom: 70px;
+    }
+
+    div {
+      position: absolute;
+      left: 40px;
+      top: -100px;
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    &:first-child div {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7) 0%,
+          rgba(156, 190, 143, 0.7) 100%
+        ),
+        #d9d9d9;
+      filter: drop-shadow(
+        0px 5.342193126678467px 20.033222198486328px rgba(10, 136, 23, 0.25)
+      );
+    }
+    &:nth-child(2) div {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7) 0%,
+          rgba(248, 210, 78, 0.7) 100%
+        ),
+        #d9d9d9;
+      filter: drop-shadow(
+        0px 5.403973579406738px 20.26490020751953px rgba(153, 114, 23, 0.25)
+      );
+    }
+    &:last-child div {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7) 0%,
+          rgba(213, 117, 63, 0.7) 100%
+        ),
+        #d9d9d9;
+      filter: drop-shadow(
+        0px 5.413332939147949px 20.299999237060547px rgba(0, 0, 0, 0.25)
+      );
+    }
+
+    button {
+      width: 40px;
+      height: 16px;
+      border: 0;
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .ul2 {
+    .card {
+      width: 320px;
+      padding: 126px 0 16px 0;
+
+      img {
+        left: 60px;
+      }
+
+      div {
+        left: 60px;
+      }
+    }
+    &:first-child p {
+      margin-bottom: 106px;
+    }
+    &:nth-child(2) p {
+      margin-bottom: 61px;
+    }
+    &:last-child p {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Products {
+    background-image: url(../images/tablet/background.jpg);
+    background-position-x: 65%;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .Products {
+      background-image: url(../images/tablet/background@2x.jpg);
+      background-position-x: 65%;
+      background-size: cover;
+    }
+  }
+
+  .ul {
+    li {
+      @include font(800, 22px);
+    }
+
+    h2 {
+      @include font(400, 34px);
+      letter-spacing: 1.36px;
+      margin-bottom: 200px;
+    }
+  }
+
+  .ul2 {
+    gap: 16px;
+
+    .card {
+      width: 224px;
+      padding: 108px 0 12px 0;
+
+      img {
+        left: 12px;
+      }
+
+      div {
+        left: 12px;
+      }
+
+      h3 {
+        @include font(700, 22px);
+        letter-spacing: 0.88px;
+      }
+
+      p {
+        width: 172px;
+      }
+      &:first-child p {
+        margin-bottom: 100px;
+      }
+      &:nth-child(2) p {
+        margin-bottom: 50px;
+      }
+      &:last-child p {
+        margin-bottom: 75px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Products {
+    background-image: url(../images/desktop/background.jpg);
+    background-position-x: 65%;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .Products {
+      background-image: url(../images/desktop/background@2x.jpg);
+      background-position-x: 65%;
+      background-size: cover;
+    }
+  }
+
+  .ul {
+    li {
+      @include font(800, 30px);
+      letter-spacing: 1.2px;
+    }
+
+    h2 {
+      @include font(400, 36px);
+      letter-spacing: 2.16px;
+      margin-bottom: 303px;
+    }
+  }
+
+  .ul2 {
+    gap: 29px;
+
+    .card {
+      width: 370px;
+      padding: 165px 0 60px 0;
+
+      img {
+        top: -167px;
+        left: 34px;
+      }
+
+      div {
+        top: -151px;
+        left: 34px;
+        width: 302px;
+        height: 302px;
+      }
+
+      h3 {
+        @include font(700, 30px);
+        letter-spacing: 1.2px;
+        margin-bottom: 66px;
+      }
+
+      p {
+        width: 242px;
+        @include font(400, 16px);
+      }
+      &:first-child p {
+        margin-bottom: 80px;
+      }
+      &:nth-child(2) p {
+        margin-bottom: 50px;
+      }
+      &:last-child p {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

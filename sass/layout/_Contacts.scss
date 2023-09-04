@@ -1,0 +1,263 @@
+.Contacts {
+  padding: 75px 0 60px 0;
+  background-color: var(--green-color);
+}
+
+.con_ct {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.card2 {
+  padding: 0 32px;
+  background-color: white;
+  border-radius: 24px;
+  width: 216px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+
+  &:first-child {
+    position: absolute;
+    top: -428px;
+  }
+
+  span {
+    text-align: center;
+    padding: 4px 22px;
+    font-family: Montserrat;
+    @include font(500, 12px);
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: 0.48px;
+    background-color: var(--yellow-color);
+    border-radius: 4px;
+  }
+
+  b {
+    font-family: Montserrat;
+    @include font(500, 12px);
+    font-style: normal;
+    line-height: 186%;
+    letter-spacing: 0.48px;
+  }
+
+  p {
+    font-family: Montserrat;
+    @include font(500, 12px);
+    font-style: normal;
+    line-height: 186%;
+  }
+
+  a {
+    font-family: Montserrat;
+    @include font(500, 12px);
+    font-style: normal;
+    line-height: 160%;
+    color: black;
+  }
+
+  li {
+    padding: 24px 0;
+
+    &:first-child {
+      padding: 40px 0 24px;
+      border-bottom: 1px solid var(--grey-color);
+
+      p {
+        width: 200px;
+        color: var(--brown-color);
+      }
+
+      b {
+        display: block;
+        margin: 20px 0 8px;
+      }
+    }
+
+    &:nth-child(2) {
+      border-bottom: 1px solid var(--grey-color);
+
+      p {
+        color: var(--grey-color);
+        &:first-of-type {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+.button3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    text-align: center;
+    margin-top: 16px;
+    padding: 12px 0;
+    width: 196px;
+    font-family: Montserrat;
+    @include font(600, 14px);
+    font-style: normal;
+    line-height: 18px;
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+    border: 0;
+  }
+
+  li:last-child button {
+    background-color: transparent;
+    border: 2px solid var(--yellow-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Contacts {
+    padding: 278px 0 40px 0;
+  }
+
+//   .con_ct {
+//     position: relative;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     gap: 16px;
+//   }
+
+  .card2 {
+    padding: 0 24px;
+    width: 176px;
+    position: absolute;
+    top: -577px;
+
+    &:first-child {
+      top: -577px;
+      left: 0;
+    }
+    &:nth-child(2) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:last-child {
+      right: 0;
+    }
+
+    span {
+      padding: 4px 13px;
+      @include font(500, 16px);
+      line-height: 140%;
+      letter-spacing: 0.64px;
+      border-radius: 6px;
+    }
+
+    b {
+      @include font(500, 14px);
+      letter-spacing: 0.56px;
+    }
+
+    p {
+      @include font(500, 14px);
+    }
+
+    a {
+      @include font(500, 14px);
+      line-height: 150%;
+    }
+
+    li {
+      padding: 32px 0;
+
+      &:first-child {
+        padding: 40px 0 32px;
+
+        p {
+          width: 159px;
+        }
+
+        b {
+          margin: 32px 0 12px;
+        }
+      }
+    }
+  }
+
+  .button3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    button {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Contacts {
+    padding: 474px 0 120px 0;
+  }
+
+//   .con_ct {
+//     position: relative;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     gap: 16px;
+//   }
+
+  .card2 {
+    padding: 0 40px;
+    width: 288px;
+    top: -602px;
+
+    &:first-child {
+      top: -602px;
+      left: 0;
+    }
+    &:nth-child(2) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:last-child {
+      right: 0;
+    }
+
+    span {
+      padding: 4px 14px;
+    }
+
+    b {
+      @include font(500, 16px);
+      letter-spacing: 0.64px;
+    }
+
+    p {
+      @include font(500, 16px);
+    }
+
+    a {
+      @include font(500, 16px);
+    }
+
+    li {
+      padding: 32px 0;
+
+      &:first-child {
+        padding: 40px 0 32px;
+
+        p {
+          width: 288px;
+        }
+
+        b {
+          margin: 32px 0 8px;
+        }
+      }
+    }
+  }
+}

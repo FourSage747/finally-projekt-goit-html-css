@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+h2, h3, h4, p {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    padding: 0 20px;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+        margin: auto;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0 32px;
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0 16px;
+        max-width: 1200px;
+    }
+}
+
+@mixin font($fw, $fs){
+    font-weight: $fw;
+    font-size: $fs;
+}

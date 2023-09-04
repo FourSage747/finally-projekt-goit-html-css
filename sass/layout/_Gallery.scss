@@ -1,0 +1,156 @@
+.Gallery {
+    padding: 178px 0 413px 0;
+    background-image: url(../images/mobile/background.jpg);
+    background-position-x: 65%;
+    background-size: cover;
+    position: relative;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .Gallery {
+      background-image: url(../images/mobile/background@2x.jpg);
+      background-position-x: 65%;
+      background-size: cover;
+    }
+  }
+
+.swiper {
+    .swiper-pagination-bullet-active {
+        background-color: var(--green-color);
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+}
+
+.slade {
+  width: 280px;
+  height: 130px;
+}
+
+
+
+.gall1 {
+  height: 170px;
+}
+
+.gall {
+  text-align: center;
+  height: 440px;
+
+    img {
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+    }
+
+  p {
+    margin: auto;
+    width: 202px;
+    font-family: Montserrat;
+    @include font(400, 12px);
+    font-style: normal;
+    line-height: 255%;
+    color: white;
+  }
+
+  h3 {
+    font-family: Montserrat;
+    @include font(500, 20px);
+    font-style: normal;
+    line-height: 186%;
+  }
+
+  .li {
+    padding: 35px 39px;
+    margin: 32px auto;
+    width: 202px;
+    background-color: var(--green-color);
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .Gallery {
+    padding: 235px 0 409px 0;
+  }
+
+  .slade {
+    width: 440px;
+    height: 204px;
+  }
+
+  .gall1 {
+    height: 244px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Gallery {
+    padding: 283px 0 379px 0;
+  }
+
+  .slade {
+    width: 704px;
+    height: 327px;
+  }
+
+  .gall1 {
+    height: 367px;
+  }
+
+  .gall {
+    height: 355px;
+  
+    p {
+      width: 545px;
+      @include font(500, 14px);
+      line-height: 186%;
+      letter-spacing: 0.56px;
+    }
+  
+    h3 {
+      @include font(500, 16px);
+    }
+  
+    .li {
+      padding: 28px 80px;
+      width: 545px;
+      border-radius: 24px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Gallery {
+    padding: 464px 0 228px 0;
+  }
+
+  .slade {
+    width: 1013px;
+    height: 422px;
+  }
+
+  .gall1 {
+    height: 462px;
+  }
+
+  .gall {
+    height: 355px;
+  
+    p {
+      width: 750px;
+      @include font(500, 16px);
+      letter-spacing: 0.64px;
+    }
+  
+    .li {
+      padding: 43px 109px;
+      width: 750px;
+    }
+  }
+}
+

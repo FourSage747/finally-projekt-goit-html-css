@@ -1,0 +1,315 @@
+header {
+  position: relative;
+  background-color: var(--green-color);
+  height: 488px;
+  padding-top: 12px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 40px;
+  height: 37px;
+}
+
+.menu {
+  display: none;
+}
+
+.button {
+  display: none;
+}
+.button2 {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    fill: white;
+  }
+}
+
+h1 {
+  font-family: Seymour One;
+  @include font(400, 26px);
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.04px;
+  text-transform: uppercase;
+  width: 247px;
+  color: white;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.menu2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  button {
+    text-align: center;
+    font-family: Montserrat;
+    @include font(600, 12px);
+    font-style: normal;
+    line-height: normal;
+    padding: 11px 26px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--yellow-color);
+  }
+
+  a {
+    color: var(--yellow-color);
+    font-family: Montserrat;
+    @include font(600, 12px);
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+}
+
+.menu3 {
+  display: none;
+}
+
+// .div {
+//   position: relative;
+// }
+
+.menu4 {
+  display: none;
+}
+
+.img2 {
+  position: absolute;
+  top: 271px;
+  right: 60px;
+  z-index: 1;
+}
+.img3 {
+  position: absolute;
+  top: 438px;
+  width: 320px;
+  right: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    width: 48px;
+    height: 44px;
+  }
+  nav {
+    margin-bottom: 40px;
+  }
+  header {
+    height: 415px;
+  }
+  .img2 {
+    top: 149px;
+    right: 18px;
+  }
+  .img3 {
+    top: 363px;
+    right: 0;
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    margin-bottom: 16px;
+  }
+  .button {
+    display: block;
+    padding: 12px 36px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--yellow-color);
+    font-family: Montserrat;
+    @include font(600, 14px);
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  .menu3 {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 126px;
+    text-align: right;
+
+    li {
+      font-family: Montserrat;
+      @include font(400, 8px);
+      font-style: normal;
+      line-height: normal;
+      color: white;
+    }
+
+    li:first-child {
+      margin-bottom: 16px;
+    }
+
+    span {
+      text-align: right;
+      font-family: Montserrat;
+      @include font(900, 28px);
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.12px;
+      text-transform: uppercase;
+      color: black;
+    }
+  }
+  .menu4 {
+    display: block;
+    position: absolute;
+    right: 393px;
+    top: 260px;
+
+    p {
+      font-family: DM Sans;
+      @include font(400, 12px);
+      font-style: normal;
+      line-height: 140%;
+      width: 165px;
+      color: white;
+    }
+
+    li:first-child {
+      margin-bottom: 29px;
+    }
+  }
+  .img {
+    position: absolute;
+    top: 245px;
+    right: 590px;
+    z-index: 1;
+  }
+  .img2 {
+    top: 86px;
+    right: 85px;
+  }
+  .img3 {
+    top: 346px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 60px;
+    height: 65px;
+  }
+  .button2{
+    display: none;
+  }
+  header {
+    height: 664px;
+  }
+  nav {
+    margin-bottom: 45px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    @include font(700, 16px);
+    font-family: Montserrat;
+    line-height: normal;
+    
+    a {
+      color: white;
+
+      &:hover,
+      &:focus{
+        color: var(--yellow-color);
+        transition: 250ms ease;
+      }
+    }
+  }
+
+  h1 {
+    @include font(400, 38px);
+    letter-spacing: 1.52px;
+    width: 367px;
+  }
+
+  .menu2 {
+    gap: 34px;
+
+    button {
+      @include font(600, 14px);
+      line-height: 18px;
+      padding: 12px 34px;
+    }
+
+    a {
+      @include font(600, 14px);
+    }
+  }
+
+  .menu3 {
+    right: 35px;
+    top: 126px;
+
+    li {
+      @include font(400, 14px);
+    }
+
+    li:first-child {
+      margin-bottom: 16px;
+    }
+
+    span {
+      @include font(900, 46px);
+      letter-spacing: 1.84px;
+    }
+  }
+
+  .menu4 {
+    right: 740px;
+    top: 445px;
+
+    p {
+      @include font(400, 14px);
+      line-height: 140%;
+      width: 200px;
+    }
+
+    li:first-child {
+      margin-bottom: 24px;
+    }
+  }
+
+  .img {
+    top: 375px;
+    right: 960px;
+  }
+  .img2 {
+    top: 104px;
+    right: 85px;
+  }
+  .img3 {
+    top: 278px;
+    width: 1200px;
+  }
+}
