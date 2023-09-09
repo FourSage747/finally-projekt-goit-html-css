@@ -3,6 +3,7 @@
   --yellow-color2: #EFD478;
   --green-color: #84A178;
   --green-color2: #AEC6A5;
+  --green-color3: #96AF8C;
   --brown-color: #D6936D;
   --grey-color: #ABABAB;
   --grey-color2: #7A7A7A;
@@ -25,7 +26,10 @@ li {
   list-style-type: none;
 }
 
-h2, h3, h4, p {
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -50,6 +54,27 @@ h2, h3, h4, p {
     padding: 0 16px;
     max-width: 1200px;
   }
+}
+
+body .open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.modal_menu, .BuyNOW, .modal_buyNow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  width: 100vw;
+  height: 95vh;
+  transform: translateX(100%);
+  transition: 250ms ease;
 }
 
 header {
@@ -79,6 +104,38 @@ nav {
   display: none;
 }
 
+.modal_menu {
+  background-color: var(--green-color);
+  padding: 16px 0;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+.modal_mn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 110px;
+}
+.modal_mn a {
+  color: white;
+  transition: 250ms ease;
+}
+.modal_mn a:hover, .modal_mn a:focus {
+  color: black;
+}
+
 .button2 {
   background-color: transparent;
   border: 0;
@@ -91,6 +148,35 @@ nav {
 }
 .button2 svg {
   fill: white;
+}
+
+.button4 {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button4 svg {
+  fill: white;
+}
+
+.button5 {
+  display: block;
+  padding: 12px 36px;
+  margin: auto;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--yellow-color);
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
 }
 
 h1 {
@@ -199,6 +285,15 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 32px;
+  }
+  .modal_mn {
+    gap: 40px;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+  .button5 {
+    display: none;
   }
   .menu3 {
     display: block;
@@ -1359,5 +1454,206 @@ footer .fo_ter4 li {
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 0.24px;
+  }
+}
+.modal_buyNow {
+  background-color: white;
+  overflow: auto;
+  padding: 12px 0 29px;
+}
+.modal_buyNow h2 {
+  text-align: center;
+  font-family: Seymour One;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  margin-bottom: 83px;
+}
+.modal_buyNow form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal_buyNow form input,
+.modal_buyNow form textarea {
+  height: 32px;
+  padding-left: 12px;
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 140%;
+}
+.modal_buyNow form input::placeholder,
+.modal_buyNow form textarea::placeholder {
+  color: black;
+}
+.modal_buyNow form textarea {
+  height: 65px;
+}
+.modal_buyNow form button {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+  padding: 12px 0;
+  width: 114px;
+  margin: auto;
+  border: 0;
+  border-radius: 10px;
+  background: var(--yellow-color);
+}
+
+.a {
+  display: flex;
+  justify-content: end;
+}
+
+.button6 {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_bN {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 82px;
+  margin-bottom: 31px;
+}
+.modal_bN .li2 {
+  position: relative;
+  width: 132px;
+  padding: 96px 0 20px;
+  border-radius: 15px;
+}
+.modal_bN .li2:first-child {
+  border: 2px solid var(--green-color3);
+}
+.modal_bN .li2:nth-child(2) {
+  background-color: var(--yellow-color2);
+}
+.modal_bN .li2:last-child {
+  border: 2px solid var(--brown-color);
+}
+.modal_bN .li2 div {
+  position: absolute;
+  top: -66px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+}
+.modal_bN .li2:first-child div {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7) 0%, rgba(156, 190, 143, 0.7) 100%), #d9d9d9;
+  filter: drop-shadow(0px 5.3421931267px 20.0332221985px rgba(10, 136, 23, 0.25));
+}
+.modal_bN .li2:nth-child(2) div {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%), #d9d9d9;
+  filter: drop-shadow(0px 5.4039735794px 20.2649002075px rgba(153, 114, 23, 0.25));
+}
+.modal_bN .li2:last-child div {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7) 0%, rgba(213, 117, 63, 0.7) 100%), #d9d9d9;
+  filter: drop-shadow(0px 5.4133329391px 20.2999992371px rgba(0, 0, 0, 0.25));
+}
+.modal_bN .li2 img {
+  position: absolute;
+  top: -73px;
+  z-index: 1;
+}
+.modal_bN .li2 h3 {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .BuyNOW {
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .MODAL .modal_buyNow {
+    position: absolute;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    width: 568px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+  }
+  .MODAL .modal_buyNow h2 {
+    text-align: center;
+    font-family: Seymour One;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 28px;
+    margin-bottom: 103px;
+  }
+  .MODAL .modal_buyNow form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .MODAL .modal_buyNow form input,
+  .MODAL .modal_buyNow form textarea {
+    height: 42px;
+    width: 368px;
+    padding-left: 12px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 140%;
+  }
+  .MODAL .modal_buyNow form input::placeholder,
+  .MODAL .modal_buyNow form textarea::placeholder {
+    color: black;
+  }
+  .MODAL .modal_buyNow form textarea {
+    height: 84px;
+  }
+  .MODAL .modal_buyNow form button {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    padding: 12px 0;
+    width: 114px;
+    margin: auto;
+    border: 0;
+    border-radius: 10px;
+    background: var(--yellow-color);
+  }
+  .modal_bN {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

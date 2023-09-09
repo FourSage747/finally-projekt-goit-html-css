@@ -1,0 +1,232 @@
+.modal_buyNow {
+  background-color: white;
+  overflow: auto;
+  padding: 12px 0 29px;
+
+  h2 {
+    text-align: center;
+    font-family: Seymour One;
+    @include font(400, 16px);
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 83px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    input,
+    textarea {
+      height: 32px;
+      padding-left: 12px;
+      border-radius: 10px;
+      border: 1px solid #84a178;
+      background: rgba(248, 210, 78, 0.1);
+      font-family: Montserrat;
+      @include font(400, 12px);
+      font-style: normal;
+      line-height: 140%;
+
+      &::placeholder {
+        color: black;
+      }
+    }
+
+    textarea {
+      height: 65px;
+    }
+
+    button {
+      text-align: center;
+      font-family: Montserrat;
+      @include font(600, 12px);
+      font-style: normal;
+      line-height: normal;
+      padding: 12px 0;
+      width: 114px;
+      margin: auto;
+      border: 0;
+      border-radius: 10px;
+      background: var(--yellow-color);
+    }
+  }
+}
+
+.a {
+  display: flex;
+  justify-content: end;
+}
+
+.button6 {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_bN {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 82px;
+  margin-bottom: 31px;
+
+  .li2 {
+    position: relative;
+    width: 132px;
+    padding: 96px 0 20px;
+    border-radius: 15px;
+
+    &:first-child {
+      border: 2px solid var(--green-color3);
+    }
+    &:nth-child(2) {
+      background-color: var(--yellow-color2);
+    }
+    &:last-child {
+      border: 2px solid var(--brown-color);
+    }
+
+    div {
+      position: absolute;
+      top: -66px;
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+    }
+    &:first-child div {
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7) 0%,
+          rgba(156, 190, 143, 0.7) 100%
+        ),
+        #d9d9d9;
+      filter: drop-shadow(
+        0px 5.342193126678467px 20.033222198486328px rgba(10, 136, 23, 0.25)
+      );
+    }
+    &:nth-child(2) div {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7) 0%,
+          rgba(248, 210, 78, 0.7) 100%
+        ),
+        #d9d9d9;
+      filter: drop-shadow(
+        0px 5.403973579406738px 20.26490020751953px rgba(153, 114, 23, 0.25)
+      );
+    }
+    &:last-child div {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7) 0%,
+          rgba(213, 117, 63, 0.7) 100%
+        ),
+        #d9d9d9;
+      filter: drop-shadow(
+        0px 5.413332939147949px 20.299999237060547px rgba(0, 0, 0, 0.25)
+      );
+    }
+
+    img {
+      position: absolute;
+      top: -73px;
+      z-index: 1;
+    }
+
+    h3 {
+      text-align: center;
+      font-family: Montserrat;
+      @include font(700, 16px);
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.64px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .BuyNOW {
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .MODAL .modal_buyNow {
+    position: absolute;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    width: 568px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      text-align: center;
+      font-family: Seymour One;
+      @include font(400, 20px);
+      font-style: normal;
+      line-height: 28px;
+      margin-bottom: 103px;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+  
+      input,
+      textarea {
+        height: 42px;
+        width: 368px;
+        padding-left: 12px;
+        border-radius: 10px;
+        border: 1px solid #84a178;
+        background: rgba(248, 210, 78, 0.1);
+        font-family: Montserrat;
+        @include font(400, 12px);
+        font-style: normal;
+        line-height: 140%;
+  
+        &::placeholder {
+          color: black;
+        }
+      }
+  
+      textarea {
+        height: 84px;
+      }
+  
+      button {
+        text-align: center;
+        font-family: Montserrat;
+        @include font(600, 12px);
+        font-style: normal;
+        line-height: normal;
+        padding: 12px 0;
+        width: 114px;
+        margin: auto;
+        border: 0;
+        border-radius: 10px;
+        background: var(--yellow-color);
+      }
+    }
+  }
+
+  .modal_bN {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+}

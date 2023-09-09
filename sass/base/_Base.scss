@@ -1,39 +1,63 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
-h2, h3, h4, p {
-    margin: 0;
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
 .container {
-    position: relative;
-    padding: 0 20px;
+  position: relative;
+  padding: 0 20px;
 
-    @media screen and (min-width: 480px) {
-        max-width: 480px;
-        margin: auto;
-    }
-    @media screen and (min-width: 768px) {
-        padding: 0 32px;
-        max-width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding: 0 16px;
-        max-width: 1200px;
-    }
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    margin: auto;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 16px;
+    max-width: 1200px;
+  }
 }
 
-@mixin font($fw, $fs){
-    font-weight: $fw;
-    font-size: $fs;
+@mixin font($fw, $fs) {
+  font-weight: $fw;
+  font-size: $fs;
+}
+
+body .open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.modal_menu, .BuyNOW, .modal_buyNow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  width: 100vw;
+  height: 95vh;
+  transform: translateX(100%);
+  transition: 250ms ease;
 }

@@ -18,10 +18,10 @@
                     <img class="logo" src="./images/Logo.png" alt="">
                 </a>
                 <ul class="menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">How it’s made?</a></li>
-                    <li><a href="">Our products</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">How it’s made?</a></li>
+                    <li><a href="#products">Our products</a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
                 <div class="div2">
                     <button type="button" class="button2">
@@ -29,9 +29,30 @@
                             <use href="./images/sprite.svg#icon_open"></use>
                         </svg>
                     </button>
-                    <button type="button" class="button">Buy now ></button>
+                    <button type="button" class="button buyNow">Buy now ></button>
                 </div>
             </nav>
+            <div class="modal_menu">
+                <div class="container">
+                    <div class="div1">
+                        <a href="">
+                            <img class="logo" src="./images/Logo.png" alt="">
+                        </a>
+                        <button type="button" class="button4">
+                            <svg>
+                                <use href="./images/sprite.svg#icon_close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="modal_mn">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">How it’s made?</a></li>
+                        <li><a href="#products">Our products</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                    <button type="button" class="button5 buyNow">Buy now ></button>
+                </div>
+            </div>
             <h1>ice cream made with passion</h1>
             <ul class="menu2">
                 <li><button type="button">Products</button></li>
@@ -128,7 +149,7 @@
         </div>
     </header>
     <main>
-        <section class="Products">
+        <section class="Products" id="products">
             <div class="container">
                 <ul class="ul">
                     <li>100% natural</li>
@@ -225,7 +246,7 @@
                 </ul>
             </div>
         </section>
-        <section class="About">
+        <section class="About" id="about">
             <div class="container">
                 <ul class="ab_ut">
                     <li>tradition and love</li>
@@ -396,7 +417,7 @@
                 </div>
             </div>
         </section>
-        <section class="Contacts">
+        <section class="Contacts" id="contacts">
             <div class="container">
                 <ul class="con_ct">
                     <li class="card2">
@@ -498,6 +519,104 @@
             </ul>
         </div>
     </footer>
+    <div class="BuyNOW MODAL">
+        <div class="modal_buyNow MODAL">
+            <div class="container">
+                <div class="a">
+                    <button type="button" class="button6">
+                        <svg width="20" height="20">
+                            <use href="./images/sprite.svg#icon_close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <h2>Buy now</h2>
+                <ul class="modal_bN">
+                    <li class="li2">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/icon.webp 1x, ./images/desktop/icon@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./images/desktop/icon.png 1x, ./images/desktop/icon@2x.png 2x"
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="./images/mobile/icon.webp 1x, ./images/mobile/icon@2x.webp 2x"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./images/mobile/icon.png 1x, ./images/mobile/icon@2x.png 2x"
+                            />
+                            <img src="" alt="" width="132" height="132">
+                        </picture>
+                        <ul>
+                            <li><div></div></li>
+                            <li><h3>ice cream</h3></li>
+                        </ul>
+                    </li>
+                    <li class="li2">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/icon1.webp 1x, ./images/desktop/icon1@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./images/desktop/icon1.png 1x, ./images/desktop/icon1@2x.png 2x"
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="./images/mobile/icon1.webp 1x, ./images/mobile/icon1@2x.webp 2x"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./images/mobile/icon1.png 1x, ./images/mobile/icon1@2x.png 2x"
+                            />
+                            <img src="" alt="" width="132" height="132">
+                        </picture>
+                        <ul>
+                            <li><div></div></li>
+                            <li><h3>ice coffee</h3></li>
+                        </ul>
+                    </li>
+                    <li class="li2">
+                        <picture>
+                            <source
+                                srcset="./images/desktop/icon2.webp 1x, ./images/desktop/icon2@2x.webp 2x"
+                                media="(min-width: 1200px)"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./images/desktop/icon2.png 1x, ./images/desktop/icon2@2x.png 2x"
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                                srcset="./images/mobile/icon2.webp 1x, ./images/mobile/icon2@2x.webp 2x"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./images/mobile/icon2.png 1x, ./images/mobile/icon2@2x.png 2x"
+                            />
+                            <img src="" alt="" width="132" height="132">
+                        </picture>
+                        <ul>
+                            <li><div></div></li>
+                            <li><h3>milkshake</h3></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form>
+                    <input type="text" name="UsName" placeholder="Name" required>
+                    <input type="text" name="UsPhone" placeholder="Phone" required>
+                    <textarea name="UsComment" placeholder="Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/menu.js"></script>
     <script type="module" src="./js/Gallery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>

@@ -23,6 +23,41 @@ nav {
 .button {
   display: none;
 }
+
+.modal_menu {
+  background-color: var(--green-color);
+  padding: 16px 0;
+}
+
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+.modal_mn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  font-family: Montserrat;
+  @include font(700, 32px);
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 110px;
+
+  a {
+    color: white;
+    transition: 250ms ease;
+
+    &:hover,
+    &:focus {
+      color: black;
+    }
+  }
+}
+
 .button2 {
   background-color: transparent;
   border: 0;
@@ -36,6 +71,34 @@ nav {
   svg {
     fill: white;
   }
+}
+.button4 {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    fill: white;
+  }
+}
+
+.button5 {
+  display: block;
+  padding: 12px 36px;
+  margin: auto;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--yellow-color);
+  font-family: Montserrat;
+  @include font(600, 14px);
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
 }
 
 h1 {
@@ -147,6 +210,17 @@ h1 {
     justify-content: center;
     gap: 32px;
   }
+
+  .modal_mn {
+    gap: 40px;
+    @include font(700, 48px);
+    margin-bottom: 0;
+  }
+
+  .button5 {
+    display: none;
+  }
+
   .menu3 {
     display: block;
     position: absolute;
@@ -217,7 +291,7 @@ h1 {
     width: 60px;
     height: 65px;
   }
-  .button2{
+  .button2 {
     display: none;
   }
   header {
@@ -235,12 +309,12 @@ h1 {
     @include font(700, 16px);
     font-family: Montserrat;
     line-height: normal;
-    
+
     a {
       color: white;
 
       &:hover,
-      &:focus{
+      &:focus {
         color: var(--yellow-color);
         transition: 250ms ease;
       }
